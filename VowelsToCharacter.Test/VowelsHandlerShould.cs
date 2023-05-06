@@ -60,5 +60,15 @@ namespace VowelsToCharacter.Test
 
             result.Should().Be("0");
         }
+
+        [Test]
+        public void ReturnNumber2WhenLetterU()
+        {
+            var vowelsHandler = new VowelsHandler();
+
+            var result = vowelsHandler.ReplaceWord("U");
+
+            result.Should().Be("2");
+        }
     }
 }
