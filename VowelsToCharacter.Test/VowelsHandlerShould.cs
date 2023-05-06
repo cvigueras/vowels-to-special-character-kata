@@ -50,5 +50,15 @@ namespace VowelsToCharacter.Test
 
             result.Should().Be("1");
         }
+
+        [Test]
+        public void ReturnNumber0WhenLetterO()
+        {
+            var vowelsHandler = new VowelsHandler();
+
+            var result = vowelsHandler.ReplaceWord("O");
+
+            result.Should().Be("0");
+        }
     }
 }
