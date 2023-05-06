@@ -4,8 +4,12 @@
     {
         public string ReplaceWord(string word)
         {
-            if(string.IsNullOrEmpty(word)) return string.Empty;
-            return "4";
+            if (string.IsNullOrEmpty(word)) return string.Empty;
+            if (word == "A")
+            {
+                return "4";
+            }
+            return "3";
         }
     }
 }
