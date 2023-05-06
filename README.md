@@ -12,3 +12,4 @@
 * Replace "!Oh!" === "!0h!"
 * Replace "aeiou" === "43102"
 * Replace "ABCDE" === "4BCD3"
+* Replace "about" === "4b02t"
