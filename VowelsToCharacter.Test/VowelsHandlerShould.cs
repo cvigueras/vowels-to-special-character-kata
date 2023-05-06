@@ -20,5 +20,15 @@ namespace VowelsToCharacter.Test
 
             result.Should().BeEmpty();
         }
+
+        [Test]
+        public void ReturnNumber4WhenLetterA()
+        {
+            var vowelsHandler = new VowelsHandler();
+
+            var result = vowelsHandler.ReplaceWord("A");
+
+            result.Should().Be("4");
+        }
     }
 }
