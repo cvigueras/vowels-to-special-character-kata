@@ -13,6 +13,10 @@
             {
                 return "1";
             }
+            if (word == "O")
+            {
+                return "0";
+            }
             return "3";
         }
     }
