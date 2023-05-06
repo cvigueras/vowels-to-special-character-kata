@@ -22,6 +22,10 @@
             {
                 return "0";
             }
+            if (word == "U")
+            {
+                return "2";
+            }
             return "3";
         }
     }
