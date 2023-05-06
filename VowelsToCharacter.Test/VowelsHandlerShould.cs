@@ -38,5 +38,13 @@ namespace VowelsToCharacter.Test
 
             result.Should().Be("4b02t");
         }
+
+        [Test]
+        public void ReturnM0rn1ngWhenWordIsMorningWithUpperCase()
+        {
+            var result = _vowelsHandler.ReplaceWord("MORNING");
+
+            result.Should().Be("M0RN1NG");
+        }
     }
 }
