@@ -34,9 +34,9 @@ namespace VowelsToCharacter.Test
         [Test]
         public void Return4b02tWhenWordIsAbout()
         {
-            var result = _vowelsHandler.ReplaceWord("4b02t");
+            var result = _vowelsHandler.ReplaceWord("about");
 
-            result.Should().Be("about");
+            result.Should().Be("4b02t");
         }
     }
 }

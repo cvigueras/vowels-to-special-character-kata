@@ -15,14 +15,13 @@
         {
             foreach (var character in word.Value)
             {
-                var result = word.Replaces.FirstOrDefault(x => x.Key == word.Value);
+                var result = word.Replaces.FirstOrDefault(x => x.Key == character.ToString());
                 if (result.Value != null)
                 {
-                    return word.Value.Replace(result.Key, result.Value).ToString();
-
+                    word.Value = word.Value.Replace(result.Key, result.Value).ToString();
                 }
             }
-            return string.Empty;
+            return word.Value;
         }
     }
 }

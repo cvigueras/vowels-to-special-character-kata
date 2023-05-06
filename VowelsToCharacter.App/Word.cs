@@ -2,7 +2,7 @@
 {
     public class Word
     {
-        public string Value { get; }
+        public string Value { get; set; }
         public Dictionary<string, string> Replaces { get; }
 
         private Word(string word)
@@ -15,12 +15,17 @@
                 {"I","1"},
                 {"O","0"},
                 {"U","2"},
+                {"a","4"},
+                {"e","3"},
+                {"i","1"},
+                {"o","0"},
+                {"u","2"},
             };
         }
 
         public static Word Create(string word)
         {
-            return new Word(word.ToUpper());
+            return new Word(word);
         }
     }
 }
