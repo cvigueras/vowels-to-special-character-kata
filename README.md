@@ -1,7 +1,7 @@
 # Replace the vowels, aeiouAEIOU for the following character:
 
-* aA ==> 4
-* eE ==> 3
-* iI ==> 1
-* oO ==> 0
-* uU ==> 2
+* a-A ==> 4
+* e-E ==> 3
+* i-I ==> 1
+* o-O ==> 0
+* u-U ==> 2
