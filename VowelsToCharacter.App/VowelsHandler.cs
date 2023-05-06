@@ -9,6 +9,10 @@
             {
                 return "4";
             }
+            if (word == "I")
+            {
+                return "1";
+            }
             return "3";
         }
     }
