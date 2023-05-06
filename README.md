@@ -1,4 +1,4 @@
-# Replace the vowels, aeiouAEIOU for the following character:
+# Replace the vowels, a-e-i-o-u-A-E-I-O-U for the following character:
 
 * a-A ==> 4
 * e-E ==> 3
