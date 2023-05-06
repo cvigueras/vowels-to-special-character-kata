@@ -1,4 +1,5 @@
 using FluentAssertions;
+using VowelsToCharacter.App;
 
 namespace VowelsToCharacter.Test
 {
@@ -18,14 +19,6 @@ namespace VowelsToCharacter.Test
             var result = vowelsHandler.ReplaceWord(string.Empty);
 
             result.Should().BeEmpty();
-        }
-    }
-
-    public class VowelsHandler
-    {
-        public string ReplaceWord(string word)
-        {
-            return string.Empty;
         }
     }
 }
