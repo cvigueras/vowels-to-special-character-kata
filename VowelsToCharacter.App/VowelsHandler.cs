@@ -10,19 +10,19 @@
 
         private static string Replaceword(string word)
         {
-            if (word == "A")
+            if (word.ToUpper() == "A")
             {
                 return "4";
             }
-            if (word == "I")
+            if (word.ToUpper() == "I")
             {
                 return "1";
             }
-            if (word == "O")
+            if (word.ToUpper() == "O")
             {
                 return "0";
             }
-            if (word == "U")
+            if (word.ToUpper() == "U")
             {
                 return "2";
             }
