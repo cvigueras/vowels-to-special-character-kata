@@ -24,7 +24,7 @@ namespace VowelsToCharacter.Test
         [TestCase("i", "1")]
         [TestCase("o", "0")]
         [TestCase("u", "2")]
-        public void ReturnStringEmptyWhenLetterIsEmpty(string input, string expectedResult)
+        public void ReturnReplacedLetterWhenIsOnlyOneLetter(string input, string expectedResult)
         {
             var result = _vowelsHandler.ReplaceWord(input);
 
