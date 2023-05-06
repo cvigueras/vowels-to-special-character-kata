@@ -5,3 +5,10 @@
 * i-I ==> 1
 * o-O ==> 0
 * u-U ==> 2
+
+#Examples
+
+* Replace "Hi!" === "H1!"
+* Replace "!Oh!" === "!0h!"
+* Replace "aeiou" === "43102"
+* Replace "ABCDE" === "4BCD3"
