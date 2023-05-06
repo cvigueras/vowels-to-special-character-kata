@@ -6,7 +6,7 @@
 * o-O ==> 0
 * u-U ==> 2
 
-#Examples
+# Examples
 
 * Replace "Hi!" === "H1!"
 * Replace "!Oh!" === "!0h!"
