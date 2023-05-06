@@ -2,31 +2,27 @@
 {
     public class VowelsHandler
     {
+        private Word _word;
+
         public string ReplaceWord(string word)
         {
-            if (string.IsNullOrEmpty(word)) return string.Empty;
-            return Replaceword(word);
+            _word = Word.Create(word);
+            if (string.IsNullOrEmpty(_word.Value)) return string.Empty;
+            return Replaceword(_word);
         }
 
-        private static string Replaceword(string word)
+        private static string Replaceword(Word word)
         {
-            if (word.ToUpper() == "A")
+            foreach (var character in word.Value)
             {
-                return "4";
+                var result = word.Replaces.FirstOrDefault(x => x.Key == word.Value);
+                if (result.Value != null)
+                {
+                    return word.Value.Replace(result.Key, result.Value).ToString();
+
+                }
             }
-            if (word.ToUpper() == "I")
-            {
-                return "1";
-            }
-            if (word.ToUpper() == "O")
-            {
-                return "0";
-            }
-            if (word.ToUpper() == "U")
-            {
-                return "2";
-            }
-            return "3";
+            return string.Empty;
         }
     }
 }
