@@ -40,5 +40,15 @@ namespace VowelsToCharacter.Test
 
             result.Should().Be("3");
         }
+
+        [Test]
+        public void ReturnNumber1WhenLetterI()
+        {
+            var vowelsHandler = new VowelsHandler();
+
+            var result = vowelsHandler.ReplaceWord("I");
+
+            result.Should().Be("1");
+        }
     }
 }
