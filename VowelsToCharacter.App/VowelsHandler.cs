@@ -5,6 +5,11 @@
         public string ReplaceWord(string word)
         {
             if (string.IsNullOrEmpty(word)) return string.Empty;
+            return Replaceword(word);
+        }
+
+        private static string Replaceword(string word)
+        {
             if (word == "A")
             {
                 return "4";
