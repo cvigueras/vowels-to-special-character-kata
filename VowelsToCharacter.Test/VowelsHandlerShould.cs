@@ -30,5 +30,13 @@ namespace VowelsToCharacter.Test
 
             result.Should().Be(expectedResult);
         }
+
+        [Test]
+        public void Return4b02tWhenWordIsAbout()
+        {
+            var result = _vowelsHandler.ReplaceWord("4b02t");
+
+            result.Should().Be("about");
+        }
     }
 }
