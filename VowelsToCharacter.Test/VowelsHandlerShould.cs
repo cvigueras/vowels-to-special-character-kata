@@ -30,5 +30,15 @@ namespace VowelsToCharacter.Test
 
             result.Should().Be("4");
         }
+
+        [Test]
+        public void ReturnNumber3WhenLetterE()
+        {
+            var vowelsHandler = new VowelsHandler();
+
+            var result = vowelsHandler.ReplaceWord("E");
+
+            result.Should().Be("3");
+        }
     }
 }
