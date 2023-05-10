@@ -10,11 +10,6 @@
             Value = word;
             Replaces = new Dictionary<string, string>
             {
-                {"A","4"},
-                {"E","3"},
-                {"I","1"},
-                {"O","0"},
-                {"U","2"},
                 {"a","4"},
                 {"e","3"},
                 {"i","1"},
@@ -23,9 +18,23 @@
             };
         }
 
-        public static Word Create(string word)
+        public static Word? Create(string word)
         {
             return new Word(word);
+        }
+
+        public string ReplaceWord()
+        {
+            foreach (var character in Value)
+            {
+                var result = Replaces.FirstOrDefault(x => x.Key.Equals(character.ToString(),
+                    StringComparison.OrdinalIgnoreCase));
+                if (result.Value != null)
+                {
+                    Value = Value.Replace(result.Key, result.Value, StringComparison.OrdinalIgnoreCase);
+                }
+            }
+            return Value;
         }
     }
 }
